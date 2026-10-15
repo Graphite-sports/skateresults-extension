@@ -15,57 +15,241 @@ export type Translations = RootTranslation
 
 type RootTranslation = {
 	/**
-	 * C​l​a​s​s​e​s​ ​o​f​ ​t​h​i​s​ ​e​v​e​n​t
+	 * M​o​c​k​u​p
 	 */
-	ClassesOfEvent: string
+	Mockup: string
 	/**
-	 * O​p​e​n​ ​s​t​a​r​t​e​r​ ​p​a​g​e
+	 * L​i​n​k​ ​t​h​i​s​ ​e​v​e​n​t​ ​t​o​ ​a​n​ ​e​v​e​n​t​ ​o​n​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s​ ​t​o​ ​b​r​i​n​g​ ​i​n​ ​i​t​s​ ​a​g​e​ ​g​r​o​u​p​s​,​ ​c​o​m​p​e​t​i​t​i​o​n​s​ ​a​n​d​ ​r​e​s​u​l​t​s​.
 	 */
-	OpenPage: string
+	Intro: string
 	/**
-	 * S​t​a​r​t​e​r​ ​e​x​t​e​n​s​i​o​n​ ​p​a​g​e
+	 * S​e​t​t​i​n​g​s
 	 */
-	PageTitle: string
+	Settings: string
 	/**
-	 * S​a​y​ ​h​e​l​l​o
+	 * T​h​i​s​ ​e​v​e​n​t​ ​i​s​ ​n​o​t​ ​l​i​n​k​e​d​ ​t​o​ ​a​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s​ ​e​v​e​n​t​ ​y​e​t​.
 	 */
-	SayHello: string
+	NotLinked: string
 	/**
-	 * H​e​l​l​o​ ​f​r​o​m​ ​t​h​e​ ​s​t​a​r​t​e​r​ ​e​x​t​e​n​s​i​o​n
+	 * L​i​n​k​ ​a​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s​ ​e​v​e​n​t
 	 */
-	Hello: string
+	LinkEvent: string
 	/**
-	 * T​h​e​ ​s​t​a​r​t​e​r​ ​e​x​t​e​n​s​i​o​n​ ​s​e​e​s​ ​g​a​m​e​ ​"​{​n​a​m​e​}​"
-	 * @param {string} name
+	 * L​i​n​k​e​d​ ​e​v​e​n​t
 	 */
-	GameNote: RequiredParams<'name'>
+	LinkedEvent: string
+	/**
+	 * U​n​l​i​n​k
+	 */
+	Unlink: string
+	/**
+	 * S​e​a​r​c​h​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s​ ​e​v​e​n​t​s
+	 */
+	SearchEvents: string
+	/**
+	 * N​a​m​e​ ​o​r​ ​c​i​t​y
+	 */
+	SearchPlaceholder: string
+	/**
+	 * {​c​o​u​n​t​}​ ​e​v​e​n​t​{​{​s​}​}
+	 * @param {number} count
+	 */
+	EventCount: RequiredParams<'count'>
+	/**
+	 * N​o​ ​e​v​e​n​t​ ​m​a​t​c​h​e​s​ ​"​{​q​u​e​r​y​}​"
+	 * @param {string} query
+	 */
+	NoEventsFound: RequiredParams<'query'>
+	/**
+	 * L​o​a​d​i​n​g​ ​f​r​o​m​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s​…
+	 */
+	Loading: string
+	/**
+	 * S​k​a​t​e​ ​R​e​s​u​l​t​s​ ​c​o​u​l​d​ ​n​o​t​ ​b​e​ ​r​e​a​c​h​e​d​.
+	 */
+	LoadFailed: string
+	/**
+	 * A​g​e​ ​g​r​o​u​p​s
+	 */
+	AgeGroups: string
+	/**
+	 * {​c​o​u​n​t​}​ ​c​o​m​p​e​t​i​t​i​o​n​{​{​s​}​}
+	 * @param {number} count
+	 */
+	CompetitionCount: RequiredParams<'count'>
+	/**
+	 * S​k​a​t​e​ ​R​e​s​u​l​t​s​ ​h​a​s​ ​n​o​ ​a​g​e​ ​g​r​o​u​p​s​ ​f​o​r​ ​t​h​i​s​ ​e​v​e​n​t​ ​y​e​t​.
+	 */
+	NoAgeGroups: string
+	Gender: {
+		/**
+		 * M​e​n
+		 */
+		male: string
+		/**
+		 * W​o​m​e​n
+		 */
+		female: string
+		/**
+		 * M​i​x​e​d
+		 */
+		mixed: string
+	}
+	/**
+	 * M​a​p​p​i​n​g​ ​p​r​e​v​i​e​w
+	 */
+	MappingPreview: string
+	/**
+	 * H​o​w​ ​t​h​e​ ​c​l​a​s​s​e​s​ ​o​f​ ​t​h​i​s​ ​e​v​e​n​t​ ​w​o​u​l​d​ ​l​i​n​e​ ​u​p​ ​w​i​t​h​ ​t​h​e​ ​a​g​e​ ​g​r​o​u​p​s​ ​o​n​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s​.​ ​N​o​t​h​i​n​g​ ​i​s​ ​s​y​n​c​h​r​o​n​i​z​e​d​ ​y​e​t​.
+	 */
+	MappingHint: string
+	/**
+	 * C​l​a​s​s​ ​i​n​ ​G​r​a​p​h​i​t​e
+	 */
+	EngineClass: string
+	/**
+	 * A​g​e​ ​g​r​o​u​p​ ​o​n​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s
+	 */
+	SkateResultsAgeGroup: string
+	/**
+	 * N​o​ ​m​a​t​c​h
+	 */
+	NoMatch: string
+	/**
+	 * T​h​i​s​ ​e​v​e​n​t​ ​h​a​s​ ​n​o​ ​c​l​a​s​s​e​s​ ​y​e​t​.
+	 */
+	NoClasses: string
+	/**
+	 * {​m​a​t​c​h​e​d​}​ ​o​f​ ​{​t​o​t​a​l​}​ ​c​l​a​s​s​e​s​ ​m​a​t​c​h​e​d
+	 * @param {number} matched
+	 * @param {number} total
+	 */
+	Matched: RequiredParams<'matched' | 'total'>
+	/**
+	 * A​P​I​ ​k​e​y
+	 */
+	ApiKey: string
+	/**
+	 * O​n​l​y​ ​p​u​b​l​i​c​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s​ ​e​v​e​n​t​s​ ​a​r​e​ ​l​i​s​t​e​d​.​ ​S​u​p​p​o​r​t​ ​f​o​r​ ​A​P​I​ ​k​e​y​s​,​ ​t​o​ ​r​e​a​c​h​ ​y​o​u​r​ ​o​w​n​ ​n​o​n​-​p​u​b​l​i​c​ ​e​v​e​n​t​s​ ​a​n​d​ ​t​o​ ​p​u​b​l​i​s​h​ ​r​e​s​u​l​t​s​,​ ​i​s​ ​c​o​m​i​n​g​.
+	 */
+	ApiKeyHint: string
 }
 
 export type TranslationFunctions = {
 	/**
-	 * Classes of this event
+	 * Mockup
 	 */
-	ClassesOfEvent: () => LocalizedString
+	Mockup: () => LocalizedString
 	/**
-	 * Open starter page
+	 * Link this event to an event on Skate Results to bring in its age groups, competitions and results.
 	 */
-	OpenPage: () => LocalizedString
+	Intro: () => LocalizedString
 	/**
-	 * Starter extension page
+	 * Settings
 	 */
-	PageTitle: () => LocalizedString
+	Settings: () => LocalizedString
 	/**
-	 * Say hello
+	 * This event is not linked to a Skate Results event yet.
 	 */
-	SayHello: () => LocalizedString
+	NotLinked: () => LocalizedString
 	/**
-	 * Hello from the starter extension
+	 * Link a Skate Results event
 	 */
-	Hello: () => LocalizedString
+	LinkEvent: () => LocalizedString
 	/**
-	 * The starter extension sees game "{name}"
+	 * Linked event
 	 */
-	GameNote: (arg: { name: string }) => LocalizedString
+	LinkedEvent: () => LocalizedString
+	/**
+	 * Unlink
+	 */
+	Unlink: () => LocalizedString
+	/**
+	 * Search Skate Results events
+	 */
+	SearchEvents: () => LocalizedString
+	/**
+	 * Name or city
+	 */
+	SearchPlaceholder: () => LocalizedString
+	/**
+	 * {count} event{{s}}
+	 */
+	EventCount: (arg: { count: number }) => LocalizedString
+	/**
+	 * No event matches "{query}"
+	 */
+	NoEventsFound: (arg: { query: string }) => LocalizedString
+	/**
+	 * Loading from Skate Results…
+	 */
+	Loading: () => LocalizedString
+	/**
+	 * Skate Results could not be reached.
+	 */
+	LoadFailed: () => LocalizedString
+	/**
+	 * Age groups
+	 */
+	AgeGroups: () => LocalizedString
+	/**
+	 * {count} competition{{s}}
+	 */
+	CompetitionCount: (arg: { count: number }) => LocalizedString
+	/**
+	 * Skate Results has no age groups for this event yet.
+	 */
+	NoAgeGroups: () => LocalizedString
+	Gender: {
+		/**
+		 * Men
+		 */
+		male: () => LocalizedString
+		/**
+		 * Women
+		 */
+		female: () => LocalizedString
+		/**
+		 * Mixed
+		 */
+		mixed: () => LocalizedString
+	}
+	/**
+	 * Mapping preview
+	 */
+	MappingPreview: () => LocalizedString
+	/**
+	 * How the classes of this event would line up with the age groups on Skate Results. Nothing is synchronized yet.
+	 */
+	MappingHint: () => LocalizedString
+	/**
+	 * Class in Graphite
+	 */
+	EngineClass: () => LocalizedString
+	/**
+	 * Age group on Skate Results
+	 */
+	SkateResultsAgeGroup: () => LocalizedString
+	/**
+	 * No match
+	 */
+	NoMatch: () => LocalizedString
+	/**
+	 * This event has no classes yet.
+	 */
+	NoClasses: () => LocalizedString
+	/**
+	 * {matched} of {total} classes matched
+	 */
+	Matched: (arg: { matched: number, total: number }) => LocalizedString
+	/**
+	 * API key
+	 */
+	ApiKey: () => LocalizedString
+	/**
+	 * Only public Skate Results events are listed. Support for API keys, to reach your own non-public events and to publish results, is coming.
+	 */
+	ApiKeyHint: () => LocalizedString
 }
 
 export type Formatters = {}

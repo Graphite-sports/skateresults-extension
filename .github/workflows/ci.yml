@@ -3,7 +3,7 @@ name: CI
 on:
   push:
   pull_request:
-  # Weekly, to notice when a newly published @graphite-sports/sdk breaks the starter.
+  # Weekly, to notice when a newly published @graphite-sports/sdk breaks the extension.
   schedule:
     - cron: '0 6 * * 1'
   workflow_dispatch:

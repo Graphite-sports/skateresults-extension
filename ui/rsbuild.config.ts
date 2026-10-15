@@ -19,7 +19,7 @@ export default defineConfig({
     pluginReact(),
     pluginModuleFederation({
       // Must be a valid JS identifier and unique among installed extensions.
-      name: 'starter_extension',
+      name: 'skateresults',
       exposes: { './manifest': './src/manifest.tsx' },
       shared: {
         react: { ...fromHost, requiredVersion: '^19.1.1' },

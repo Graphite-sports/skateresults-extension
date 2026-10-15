@@ -1,7 +1,7 @@
 {
-  "name": "starter-extension",
-  "identifier": "starter-extension",
+  "name": "skateresults",
+  "identifier": "skateresults",
   "version": "0.1.0",
-  "description": "Starting point for Graphite extensions.",
+  "description": "Links a Graphite event to an event on Skate Results and shows its age groups and competitions (mockup).",
   "author": "Timo Lehnertz"
 }
