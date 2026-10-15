@@ -207,7 +207,6 @@ function Header() {
   return (
     <div className="flex items-center gap-2">
       <h2 className="text-lg font-semibold">Skate Results</h2>
-      <span className="rounded bg-warning px-2 text-xs">{LL.Mockup()}</span>
     </div>
   );
 }

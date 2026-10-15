@@ -1,7 +1,6 @@
 import type { Translation } from '../i18n-types';
 
 const de = {
-  Mockup: 'Mockup',
   Intro: 'Verknüpfe diese Veranstaltung mit einer Veranstaltung auf Skate Results, um deren Altersklassen, Wettbewerbe und Ergebnisse zu übernehmen.',
   Settings: 'Einstellungen',
   NotLinked: 'Diese Veranstaltung ist noch mit keiner Skate-Results-Veranstaltung verknüpft.',

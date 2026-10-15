@@ -15,10 +15,6 @@ export type Translations = RootTranslation
 
 type RootTranslation = {
 	/**
-	 * M​o​c​k​u​p
-	 */
-	Mockup: string
-	/**
 	 * L​i​n​k​ ​t​h​i​s​ ​e​v​e​n​t​ ​t​o​ ​a​n​ ​e​v​e​n​t​ ​o​n​ ​S​k​a​t​e​ ​R​e​s​u​l​t​s​ ​t​o​ ​b​r​i​n​g​ ​i​n​ ​i​t​s​ ​a​g​e​ ​g​r​o​u​p​s​,​ ​c​o​m​p​e​t​i​t​i​o​n​s​ ​a​n​d​ ​r​e​s​u​l​t​s​.
 	 */
 	Intro: string
@@ -136,10 +132,6 @@ type RootTranslation = {
 }
 
 export type TranslationFunctions = {
-	/**
-	 * Mockup
-	 */
-	Mockup: () => LocalizedString
 	/**
 	 * Link this event to an event on Skate Results to bring in its age groups, competitions and results.
 	 */

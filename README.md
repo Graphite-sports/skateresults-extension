@@ -3,7 +3,7 @@
 A [Graphite](https://www.graphite-engine.com) extension that connects a Graphite event with an event on
 [Skate Results](https://skateresults.app).
 
-> **Mockup.** This first version only reads public data from Skate Results. Nothing is synchronized
+> **First version.** It only reads public data from Skate Results. Nothing is synchronized
 > yet and the API key of a Skate Results account is not supported yet.
 
 What it does:
